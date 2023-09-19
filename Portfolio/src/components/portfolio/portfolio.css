@@ -1,0 +1,31 @@
+/*!! Card_Proyects*/
+
+.section_proyects {
+  background-color: #bfa98e;
+  padding: 10em 20em 10em 20em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 7em;
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.proyects_box {
+  display: grid;
+  border: solid 1px red;
+  background-color: blueviolet;
+  border-radius: 0.5em;
+}
+.img_proyects {
+  width: 20em;
+  height: 12em;
+  object-fit: cover; /* La imagen se ajustará para cubrir el div sin deformación */
+  margin: 1em;
+  border-radius: 1%;
+}
+.name_proyects {
+  border: solid 1px rgb(0, 255, 13);
+}
+.type_proyects {
+  border: solid 1px rgb(184, 10, 190);
+}

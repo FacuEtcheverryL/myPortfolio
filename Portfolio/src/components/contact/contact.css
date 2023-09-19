@@ -1,0 +1,207 @@
+.main_contact {
+  flex-grow: 1;
+  min-height: 80.7vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.span_title {
+  color: #274030;
+}
+
+.section_contact {
+  display: grid;
+  max-height: 30em;
+  margin-left: 40px;
+  padding: 0 20px;
+}
+.contact_h1 {
+  color: #0d0d0d;
+  font-size: 6rem;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section_article {
+  font-size: 1.7rem;
+  color: #414141;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-top: 2em;
+}
+
+.article_social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  place-items: center;
+}
+
+.img_contact {
+  margin-top: 8em;
+  border-radius: 5%;
+  height: 35em;
+  margin-left: 3em;
+  place-items: center;
+}
+
+.box_name {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+}
+.div_social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.img_social {
+  display: grid;
+  margin: 0 auto;
+}
+
+/*!! ENVIO DE EMAIL */
+.footer {
+  background-color: #bfa98e;
+}
+.footer_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.footer_h1_contact {
+  color: #0d0d0d;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  padding-bottom: 35px;
+  padding-top: 1em;
+  margin-left: 7em;
+  margin-right: 1em;
+}
+.input_email_name {
+  border-radius: 4px;
+  border: 1px solid #414141;
+  height: 2.7rem;
+  max-width: 25rem;
+  min-width: 15rem;
+}
+.send_email_name {
+  display: grid;
+  grid-template-rows: auto auto; /* Define dos filas, una para la etiqueta y otra para el input */
+  gap: 3px; /* Espacio entre las filas */
+  color: #414141;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 8em;
+  margin-bottom: 2rem;
+  padding-right: 10px;
+  /* border: 1px solid teal; */
+}
+.box_message {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 4em;
+  /* border: 1px solid green; */
+  padding-right: 8em;
+}
+.label_email_contact {
+  display: grid;
+  grid-template-rows: auto auto; /* Define dos filas, una para la etiqueta y otra para el input */
+  gap: 3px; /* Espacio entre las filas */
+  color: #414141;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+.input_message {
+  height: 9.5rem;
+  width: 100%;
+  border-radius: 4px;
+}
+.send_button_contact {
+  height: 50px;
+  justify-self: end;
+}
+.button_contact {
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  background-color: #0d0d0d;
+  color: #f2eee9;
+}
+
+/*!! RESPONSIVE*/
+
+@media (max-width: 1609px) {
+  .footer_contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box_message {
+    margin-left: 10em;
+    padding-right: 2.5%;
+  }
+}
+
+@media (max-width: 1360px) {
+  .main_contact {
+    min-height: 82.9vh;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 3em;
+    margin-right: 3em;
+    gap: 4em;
+    justify-items: center;
+  }
+  .img_contact {
+    margin-top: 0em;
+  }
+
+  .footer_contact {
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 650px) {
+  .main_contact {
+    min-height: 82.9vh;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -1em;
+    margin-right: 1.5em;
+    margin-bottom: -2.2em;
+  }
+  .contact_h1 {
+    font-size: 5rem;
+  }
+  .img_contact {
+    height: 11em;
+    margin-top: 0em;
+  }
+  .footer_contact {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .box_message {
+    margin-left: 1.3em;
+    margin-right: 2.8em;
+  }
+  .send_email_name {
+    margin-left: 1em;
+    margin-right: 2em;
+  }
+  .footer_h1_contact {
+    margin-left: 1em;
+    margin-right: 2em;
+  }
+}
