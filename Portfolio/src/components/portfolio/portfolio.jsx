@@ -22,33 +22,28 @@ function Portfolio() {
       </main>
       <hr />
       <section className="section_proyects">
-        <article className="proyects_box">
-          <img
-            className="img_proyects"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9psjN5s4Q239I2vPagg149nXH8uqmXP3UXQ"
-            alt="Proyect IMG"
-          />
-          <h3 className="name_proyects">Name</h3>
-          <h3 className="type_proyects">Proyects Type</h3>
-        </article>
-        <article className="proyects_box">
-          <img
-            className="img_proyects"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9psjN5s4Q239I2vPagg149nXH8uqmXP3UXQ"
-            alt="Proyect IMG"
-          />
-          <h3 className="name_proyects">Name</h3>
-          <h3 className="type_proyects">Proyect Type</h3>
-        </article>
-        <article className="proyects_box">
-          <img
-            className="img_proyects"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9psjN5s4Q239I2vPagg149nXH8uqmXP3UXQ"
-            alt="Proyect IMG"
-          />
-          <h3 className="name_proyects">Name</h3>
-          <h3 className="type_proyects">Proyect Type</h3>
-        </article>
+        <a href="">
+          <article className="proyects_box">
+            <img
+              className="img_proyects"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9psjN5s4Q239I2vPagg149nXH8uqmXP3UXQ"
+              alt="Proyect IMG"
+            />
+            <h3 className="name_proyects">Videogames - PI</h3>
+            <h3 className="type_proyects">Dashboard</h3>
+          </article>
+        </a>
+        <a href="">
+          <article className="proyects_box">
+            <img
+              className="img_proyects"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9psjN5s4Q239I2vPagg149nXH8uqmXP3UXQ"
+              alt="Proyect IMG"
+            />
+            <h3 className="name_proyects">SnowPanda Co.</h3>
+            <h4 className="type_proyects">E-Commerce</h4>
+          </article>
+        </a>
       </section>
     </>
   );

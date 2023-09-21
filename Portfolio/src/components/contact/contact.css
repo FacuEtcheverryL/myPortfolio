@@ -67,6 +67,7 @@
 /*!! ENVIO DE EMAIL */
 .footer {
   background-color: #bfa98e;
+  padding-bottom: 4em;
 }
 .footer_contact {
   display: grid;
