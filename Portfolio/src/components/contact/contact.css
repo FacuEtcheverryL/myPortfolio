@@ -1,3 +1,5 @@
+@import "../variables.css";
+
 .main_contact {
   flex-grow: 1;
   min-height: 80.7vh;
@@ -41,11 +43,12 @@
 }
 
 .img_contact {
-  margin-top: 8em;
   border-radius: 5%;
   height: 35em;
   margin-left: 3em;
   place-items: center;
+  max-width: 35em;
+  max-height: 35em;
 }
 
 .box_name {
@@ -153,10 +156,11 @@
   .box_message {
     margin-left: 10em;
     padding-right: 2.5%;
+    max-width: 50em;
   }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1570px) {
   .main_contact {
     min-height: 82.9vh;
     grid-template-columns: repeat(1, 1fr);
@@ -186,8 +190,9 @@
     font-size: 5rem;
   }
   .img_contact {
-    height: 11em;
+    height: 19em;
     margin-top: 0em;
+    margin-bottom: 3em;
   }
   .footer_contact {
     margin-left: 1em;

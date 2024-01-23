@@ -14,12 +14,23 @@ function Portfolio() {
             <br /> Jobs, personal projects, playroom, everything adds up.
           </h4>
         </section>
-        <img
-          className="img_about"
-          src="https://www.hepper.com/wp-content/uploads/2022/09/dachshund-dog-sitting-on-the-couch_zoschfrosch_Pixabay.jpg"
-          alt="Imagen"
-        />
+        <section className="section_img">
+          <img
+            className="img_portfolio"
+            src="https://i.pinimg.com/736x/a6/54/ce/a654ced90948113f263ec06a9bb3715e--long-haired-dachshund-dachshund-love.jpg"
+            alt="Imagen"
+          />
+        </section>
       </main>
+      <section>
+        <ul>
+          <li>HERRAMIENTAS</li>
+        </ul>
+      </section>
+      <h3 className="title_footer">
+        <span className="spam_home">P</span>ROJECT
+        <span className="spam_home">S</span>
+      </h3>
       <hr />
       <section className="section_proyects">
         <a href="">

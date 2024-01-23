@@ -1,3 +1,18 @@
+@import "../variables.css";
+
+.section_img {
+  display: flex;
+}
+.img_portfolio {
+  max-width: 35em;
+  max-height: 35em;
+  display: flex;
+  border-radius: 5%;
+  max-height: 35em;
+  margin-left: 3em;
+  place-items: center;
+}
+
 /*!! Card_Proyects*/
 
 .section_proyects {
@@ -12,7 +27,7 @@
 
 .proyects_box {
   display: grid;
-  border: solid 1px #f23c13;
+
   background-color: #f2eee9;
   border-radius: 0.5em;
   height: 17em;
@@ -47,4 +62,11 @@ a {
   color: #0d0d0d;
   font-weight: 300;
   font-size: 20px;
+}
+
+/*!! Responsive*/
+@media (max-width: 1570px) {
+  .section_proyects {
+    padding: 10em 5em 10em 5em;
+  }
 }

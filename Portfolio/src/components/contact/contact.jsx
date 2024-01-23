@@ -20,6 +20,7 @@ function Contact() {
             <div>
               <Link
                 className="box_name"
+                target="_blank"
                 to="https://www.linkedin.com/in/facundo-lopez-etcheverry/"
               >
                 <img className="img_social" src={linkedinLogo}></img>
@@ -29,6 +30,7 @@ function Contact() {
             <div className="div_social">
               <Link
                 className="box_name"
+                target="_blank"
                 to="https://github.com/FacuEtcheverryL"
               >
                 <img className="img_social" src={GithubLogo}></img>
@@ -41,12 +43,13 @@ function Contact() {
         <aside className="aside_img">
           <img
             className="img_contact"
-            src="https://img.freepik.com/fotos-premium/ilustracion-generativa-ia-perro-dachshund-gafas-sol-vacaciones-sentado-hamaca_58460-14383.jpg?w=2000"
+            src="https://cdn.britannica.com/15/234215-050-140D3D84/Wirehaired-dachshund-dog.jpg"
             alt="Foto Contacto"
           />
         </aside>
       </main>
-      <footer className="footer">
+
+      {/* <footer className="footer">
         <h1 className="footer_h1_contact">Send me an email</h1>
         <div className="footer_contact">
           <div>
@@ -75,7 +78,7 @@ function Contact() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }

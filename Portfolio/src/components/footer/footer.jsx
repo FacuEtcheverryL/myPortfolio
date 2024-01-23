@@ -34,7 +34,7 @@ function Footer() {
               to="/contact"
               onClick={() => scrollTop()}
             >
-              contact
+              Contact
             </Link>
           </div>
         </article>

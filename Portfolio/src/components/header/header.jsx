@@ -1,5 +1,5 @@
 import Logo from "../../img/2-removebg-preview.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "boxicons";
 import "./header.css";
 
@@ -7,6 +7,14 @@ function Header() {
   const scrollTop = () => {
     window.scroll(0, 0);
   };
+
+  //!
+  const location = useLocation();
+
+  const ContactPage = () => {
+    return location.pathname === "/contact";
+  };
+  //!
 
   return (
     <div className="header">
@@ -23,21 +31,29 @@ function Header() {
           Portfolio
         </Link>
         <Link className="link" to="/contact" onClick={() => scrollTop()}>
-          contact
+          Contact
         </Link>
       </div>
-      <div className="social">
-        <Link
-          className="link_social"
-          to="/portfolio"
-          onClick={() => scrollTop()}
-        >
-          <box-icon name="linkedin" type="logo" color="#fffefe"></box-icon>
-        </Link>
-        <Link className="link_social" to="/contact" onClick={() => scrollTop()}>
-          <box-icon name="github" type="logo" color="#f2eee9"></box-icon>
-        </Link>
-      </div>
+      {ContactPage() ? null : (
+        <div className="social">
+          <Link
+            className="link_social"
+            target="_blank"
+            to="https://www.linkedin.com/in/facundo-lopez-etcheverry/"
+            onClick={() => scrollTop()}
+          >
+            <box-icon name="linkedin" type="logo" color="#fffefe"></box-icon>
+          </Link>
+          <Link
+            className="link_social"
+            target="_blank"
+            to="https://github.com/FacuEtcheverryL"
+            onClick={() => scrollTop()}
+          >
+            <box-icon name="github" type="logo" color="#f2eee9"></box-icon>
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

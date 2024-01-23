@@ -1,3 +1,5 @@
+@import "../variables.css";
+
 body {
   background-color: #f2eee9;
 }
@@ -38,20 +40,20 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
-.img_about {
-  /* margin-top: 10em;
-  border-radius: 5%;
-  height: 20em;
-  margin-left: 3em;
-  place-items: center; */
-  margin-top: 8em;
-  border-radius: 5%;
-  height: 35em;
-  margin-left: 3em;
-  place-items: center;
+.section_img {
 }
 
-@media (max-width: 1360px) {
+.img_about {
+  display: flex;
+  border-radius: 5%;
+  max-height: 35em;
+  margin-left: 3em;
+  place-items: center;
+  max-width: 35em;
+  max-height: 35em;
+}
+
+@media (max-width: 1570px) {
   .main {
     min-height: 82.9vh;
     grid-template-columns: repeat(1, 1fr);
@@ -62,10 +64,11 @@ body {
   }
   .img_about {
     margin-top: 0em;
+    margin-bottom: 3em;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 890px) {
   .main {
     min-height: 82.9vh;
     grid-template-columns: repeat(1, 1fr);
@@ -74,7 +77,8 @@ body {
     margin-bottom: -2.2em;
   }
   .img_about {
-    height: 11em;
+    height: 20em;
     margin-top: 0em;
+    margin-bottom: 3em;
   }
 }

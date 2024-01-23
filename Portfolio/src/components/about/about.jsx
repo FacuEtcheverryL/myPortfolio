@@ -17,11 +17,13 @@ function About() {
           garden, with my beloved people or playing paddle tennis.
         </h4>
       </section>
-      <img
-        className="img_about"
-        src="https://img.freepik.com/fotos-premium/ilustracion-generativa-ia-perro-dachshund-gafas-sol-vacaciones-sentado-hamaca_58460-14368.jpg"
-        alt="Imagen"
-      />
+      <section className="section_img">
+        <img
+          className="img_about"
+          src="https://www.doghouse.co.uk/cdn/shop/products/image_71ddc529-e4fd-4cc0-894b-1c36e8b2d5b2.jpg?v=1679829190"
+          alt="Imagen"
+        />
+      </section>
     </main>
   );
 }
