@@ -1,7 +1,10 @@
 import Logo from "../../img/2-removebg-preview.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import { Link, useLocation } from "react-router-dom";
 import "boxicons";
 import "./header.css";
+import { useDispatch, useSelector } from "react-redux";
+import ReactCountryFlag from "react-country-flag";
 
 function Header() {
   const scrollTop = () => {
@@ -9,11 +12,29 @@ function Header() {
   };
 
   //!
-  const location = useLocation();
 
-  const ContactPage = () => {
-    return location.pathname === "/contact";
+  // Ubicacion para saber si es Contact
+  // const location = useLocation();
+
+  // const ContactPage = () => {
+  //   return location.pathname === "/contact";
+  // };
+
+  const language = useSelector((state) => state.languages.language);
+
+  const dispatch = useDispatch();
+
+  const changeLanguage = () => {
+    if (language === "es") {
+      dispatch({ type: "en" });
+      console.log(language);
+    }
+    if (language === "en") {
+      dispatch({ type: "es" });
+      console.log(language);
+    }
   };
+
   //!
 
   return (
@@ -34,26 +55,18 @@ function Header() {
           Contact
         </Link>
       </div>
-      {ContactPage() ? null : (
-        <div className="social">
-          <Link
-            className="link_social"
-            target="_blank"
-            to="https://www.linkedin.com/in/facundo-lopez-etcheverry/"
-            onClick={() => scrollTop()}
-          >
-            <box-icon name="linkedin" type="logo" color="#fffefe"></box-icon>
-          </Link>
-          <Link
-            className="link_social"
-            target="_blank"
-            to="https://github.com/FacuEtcheverryL"
-            onClick={() => scrollTop()}
-          >
-            <box-icon name="github" type="logo" color="#f2eee9"></box-icon>
-          </Link>
-        </div>
-      )}
+
+      <div className="social">
+        <Link className="link_social" onClick={() => changeLanguage()}>
+          {language === "es" ? (
+            <ReactCountryFlag countryCode="ES" />
+          ) : (
+            <ReactCountryFlag countryCode="US" />
+          )}
+
+          {language === "es" ? " Español" : " English"}
+        </Link>
+      </div>
     </div>
   );
 }

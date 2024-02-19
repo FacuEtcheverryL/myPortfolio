@@ -1,8 +1,10 @@
 import "./home.css";
 import looper from "../../img/Looper.jpeg";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Home() {
+  const language = useSelector((state) => state.languages.language);
   return (
     <main>
       <body className="main_home">
@@ -29,10 +31,17 @@ function Home() {
         </section>
       </body>
       <footer className="footer_">
-        <h3 className="title_footer">
-          <span className="spam_home">L</span>AST PROJECT
-          <span className="spam_home">S</span>
-        </h3>
+        {language === "es" ? (
+          <h3 className="title_footer">
+            <span className="spam_home">L</span>AST PROJECT
+            <span className="spam_home">S</span>
+          </h3>
+        ) : (
+          <h3 className="title_footer">
+            <span className="spam_home">U</span>LTIMOS PROJECTO
+            <span className="spam_home">S</span>
+          </h3>
+        )}
         <section className="section_home">
           <div></div>
           <a href="/videogames">

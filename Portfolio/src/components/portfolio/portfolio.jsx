@@ -1,4 +1,5 @@
 import "./portfolio.css";
+import Stack from "./stacks";
 
 function Portfolio() {
   return (
@@ -24,8 +25,17 @@ function Portfolio() {
       </main>
       <section>
         <ul>
-          <li>HERRAMIENTAS</li>
+          <li>My Stack</li>
         </ul>
+        <ul>
+          <li>Javascript</li>
+          <li>NodeJs</li>
+          <li>React</li>
+          <li>PostgreSQL</li>
+          <li>Express</li>
+        </ul>
+
+        <Stack />
       </section>
       <h3 className="title_footer">
         <span className="spam_home">P</span>ROJECT
