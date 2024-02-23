@@ -3,9 +3,22 @@ import { Link } from "react-router-dom";
 import "./contact.css";
 import GithubLogo from "../../img/github-100.png";
 import linkedinLogo from "../../img/linkedin-100.png";
+import correoLogo from "../../img/googleplus.png";
 
 import ContactEs from "./contactEs";
 import { useSelector } from "react-redux";
+
+function enviarCorreo() {
+  var destinatario = "faculetcheverry@gmail.com";
+  var asunto = "From your portfolio";
+
+  // Generar el enlace del correo con el destinatario y asunto predefinidos
+  var enlaceCorreo =
+    "mailto:" + destinatario + "?subject=" + encodeURIComponent(asunto);
+
+  // Abrir el cliente de correo electrónico
+  window.location.href = enlaceCorreo;
+}
 
 function Contact() {
   const language = useSelector((state) => state.languages.language);
@@ -33,6 +46,13 @@ function Contact() {
                   <h4>LinkedIn</h4>
                 </Link>
               </div>
+              <div>
+                <Link onClick={enviarCorreo} className="box_name">
+                  <img className="img_social" src={correoLogo}></img>
+                  <h4>Gmail</h4>
+                </Link>
+              </div>
+
               <div className="div_social">
                 <Link
                   className="box_name"

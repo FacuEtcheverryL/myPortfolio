@@ -44,17 +44,31 @@ function Header() {
           <img src={Logo} alt="" className="imgLogo" />
         </Link>
       </div>
-      <div className="links">
-        <Link className="link" to="/about" onClick={() => scrollTop()}>
-          About
-        </Link>
-        <Link className="link" to="/portfolio" onClick={() => scrollTop()}>
-          Portfolio
-        </Link>
-        <Link className="link" to="/contact" onClick={() => scrollTop()}>
-          Contact
-        </Link>
-      </div>
+      {language === "es" ? (
+        <div className="links">
+          <Link className="link" to="/about" onClick={() => scrollTop()}>
+            About me
+          </Link>
+          <Link className="link" to="/portfolio" onClick={() => scrollTop()}>
+            Portfolio
+          </Link>
+          <Link className="link" to="/contact" onClick={() => scrollTop()}>
+            Contact
+          </Link>
+        </div>
+      ) : (
+        <div className="links">
+          <Link className="link" to="/about" onClick={() => scrollTop()}>
+            Sobre Mi
+          </Link>
+          <Link className="link" to="/portfolio" onClick={() => scrollTop()}>
+            Portafolio
+          </Link>
+          <Link className="link" to="/contact" onClick={() => scrollTop()}>
+            Contacto
+          </Link>
+        </div>
+      )}
 
       <div className="social">
         <Link className="link_social" onClick={() => changeLanguage()}>
